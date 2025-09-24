@@ -1036,4 +1036,4 @@ Para reportar bugs, inclua:
 
 **Laravel E-commerce Store** - A solução completa para seu e-commerce! 🛍️✨
 
-Desenvolvido com ❤️ pela **Supernova Corp**
+Desenvolvido com ❤️ pela **Supernova Corp**# laravel-ecommerce-store
