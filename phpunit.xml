@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/10.5/phpunit.xsd"
+         bootstrap="vendor/autoload.php"
+         colors="true"
+         cacheDirectory=".phpunit.cache"
+         backupGlobals="false"
+         processIsolation="false"
+         stopOnFailure="false"
+         executionOrder="random"
+         failOnWarning="true"
+         failOnRisky="true"
+         failOnEmptyTestSuite="true"
+         beStrictAboutOutputDuringTests="true"
+         displayDetailsOnTestsThatTriggerWarnings="true"
+         displayDetailsOnTestsThatTriggerDeprecations="true"
+         displayDetailsOnTestsThatTriggerErrors="true"
+         displayDetailsOnTestsThatTriggerNotices="true"
+         displayDetailsOnPhpunitDeprecations="true"
+         displayDetailsOnTestsThatTriggerPhpunitDeprecations="true">
+    <testsuites>
+        <testsuite name="Unit">
+            <directory suffix="Test.php">./tests/Unit</directory>
+        </testsuite>
+        <testsuite name="Feature">
+            <directory suffix="Test.php">./tests/Feature</directory>
+        </testsuite>
+        <testsuite name="Integration">
+            <directory suffix="Test.php">./tests/Integration</directory>
+        </testsuite>
+    </testsuites>
+    <coverage>
+        <include>
+            <directory suffix=".php">./src</directory>
+        </include>
+        <exclude>
+            <directory suffix=".php">./src/Database/migrations</directory>
+            <directory suffix=".php">./src/Console</directory>
+            <directory suffix=".php">./src/Providers</directory>
+            <file>./src/StoreServiceProvider.php</file>
+        </exclude>
+        <report>
+            <html outputDirectory="build/coverage" lowUpperBound="35" highLowerBound="70"/>
+            <text outputFile="build/coverage.txt" showOnlySummary="true"/>
+            <clover outputFile="build/logs/clover.xml"/>
+            <cobertura outputFile="build/logs/cobertura.xml"/>
+        </report>
+    </coverage>
+    <logging>
+        <junit outputFile="build/logs/junit.xml"/>
+        <teamcity outputFile="build/logs/teamcity.xml"/>
+        <testdox outputFile="build/logs/testdox.html"/>
+    </logging>
+    <php>
+        <env name="APP_ENV" value="testing"/>
+        <env name="APP_KEY" value="base64:2fl+Ktvk1c1c2fl+Ktvk1c1c2fl+Ktvk1c1c2fl+Ktvk1c1c="/>
+        <env name="APP_DEBUG" value="true"/>
+        <env name="APP_URL" value="http://localhost"/>
+        <env name="LOG_CHANNEL" value="single"/>
+        <env name="LOG_LEVEL" value="debug"/>
+        <env name="DB_CONNECTION" value="sqlite"/>
+        <env name="DB_DATABASE" value=":memory:"/>
+        <env name="SESSION_DRIVER" value="array"/>
+        <env name="BROADCAST_DRIVER" value="log"/>
+        <env name="CACHE_DRIVER" value="array"/>
+        <env name="FILESYSTEM_DISK" value="local"/>
+        <env name="QUEUE_CONNECTION" value="sync"/>
+        <env name="MAIL_MAILER" value="array"/>
+        <env name="REDIS_HOST" value="127.0.0.1"/>
+        <env name="REDIS_PASSWORD" value="null"/>
+        <env name="REDIS_PORT" value="6379"/>
+        <env name="PUSHER_APP_ID" value=""/>
+        <env name="PUSHER_APP_KEY" value=""/>
+        <env name="PUSHER_APP_SECRET" value=""/>
+        <env name="PUSHER_HOST" value=""/>
+        <env name="PUSHER_PORT" value="443"/>
+        <env name="PUSHER_SCHEME" value="https"/>
+        <env name="VITE_PUSHER_APP_KEY" value="${PUSHER_APP_KEY}"/>
+        <env name="VITE_PUSHER_HOST" value="${PUSHER_HOST}"/>
+        <env name="VITE_PUSHER_PORT" value="${PUSHER_PORT}"/>
+        <env name="VITE_PUSHER_SCHEME" value="${PUSHER_SCHEME}"/>
+        <env name="VITE_PUSHER_APP_CLUSTER" value="mt1"/>
+    </php>
+    <source>
+        <include>
+            <directory suffix=".php">./src</directory>
+        </include>
+        <exclude>
+            <directory suffix=".php">./src/Database/migrations</directory>
+            <directory suffix=".php">./src/Console</directory>
+            <directory suffix=".php">./src/Providers</directory>
+        </exclude>
+    </source>
+</phpunit>
