@@ -1,5 +1,5 @@
 {
-    "name": "laravel-ecommerce/store",
+    "name": "hillgp/laravel-ecommerce-store",
     "description": "Laravel E-commerce Store Package - Complete online store solution",
     "type": "laravel-package",
     "license": "MIT",

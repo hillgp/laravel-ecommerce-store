@@ -1,0 +1,21 @@
+# Exclude files from the package
+.gitattributes export-ignore
+.gitignore export-ignore
+.github export-ignore
+tests export-ignore
+phpunit.xml export-ignore
+README-COMPARISON.md export-ignore
+INSTALLATION-GUIDE.md export-ignore
+CONTRIBUTING.md export-ignore
+
+# Include only necessary files
+src export-ignore
+config export-ignore
+database export-ignore
+resources export-ignore
+routes export-ignore
+
+# Keep the main files
+composer.json export
+README.md export
+LICENSE export

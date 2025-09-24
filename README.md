@@ -1,6 +1,6 @@
 # Laravel E-commerce Store
 
-[![Latest Version](https://img.shields.io/packagist/v/supernova/laravel-ecommerce-store.svg)](https://packagist.org/packages/supernova/laravel-ecommerce-store)
+[![Latest Version](https://img.shields.io/packagist/v/hillgp/laravel-ecommerce-store.svg)](https://packagist.org/packages/hillgp/laravel-ecommerce-store)
 [![PHP Version](https://img.shields.io/badge/php-8.2+-blue.svg)](https://php.net)
 [![Laravel Version](https://img.shields.io/badge/laravel-12.0+-red.svg)](https://laravel.com)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
@@ -49,7 +49,7 @@
 
 1. **Instalar via Composer:**
 ```bash
-composer require supernova/laravel-ecommerce-store
+composer require hillgp/laravel-ecommerce-store
 ```
 
 2. **Publicar arquivos de configuração:**
@@ -965,7 +965,7 @@ Este projeto está licenciado sob a **MIT License** - veja o arquivo [LICENSE](L
 ### Canais de Suporte
 
 - **Documentação**: [docs.loja.com](https://docs.loja.com)
-- **GitHub Issues**: [github.com/supernova/laravel-ecommerce-store/issues](https://github.com/supernova/laravel-ecommerce-store/issues)
+- **GitHub Issues**: [github.com/hillgp/laravel-ecommerce-store/issues](https://github.com/hillgp/laravel-ecommerce-store/issues)
 - **Email**: suporte@loja.com
 - **Discord**: [discord.gg/ecommerce](https://discord.gg/ecommerce)
 - **Fórum**: [forum.loja.com](https://forum.loja.com)
@@ -1021,16 +1021,16 @@ Para reportar bugs, inclua:
 ## 📈 Estatísticas
 
 ### Downloads
-![Packagist Downloads](https://img.shields.io/packagist/dt/supernova/laravel-ecommerce-store.svg)
+![Packagist Downloads](https://img.shields.io/packagist/dt/hillgp/laravel-ecommerce-store.svg)
 
 ### GitHub
-![GitHub Stars](https://img.shields.io/github/stars/supernova/laravel-ecommerce-store.svg)
-![GitHub Forks](https://img.shields.io/github/forks/supernova/laravel-ecommerce-store.svg)
-![GitHub Issues](https://img.shields.io/github/issues/supernova/laravel-ecommerce-store.svg)
+![GitHub Stars](https://img.shields.io/github/stars/hillgp/laravel-ecommerce-store.svg)
+![GitHub Forks](https://img.shields.io/github/forks/hillgp/laravel-ecommerce-store.svg)
+![GitHub Issues](https://img.shields.io/github/issues/hillgp/laravel-ecommerce-store.svg)
 
 ### Qualidade
-![Code Quality](https://img.shields.io/scrutinizer/g/supernova/laravel-ecommerce-store.svg)
-![Build Status](https://img.shields.io/scrutinizer/build/status/supernova/laravel-ecommerce-store.svg)
+![Code Quality](https://img.shields.io/scrutinizer/g/hillgp/laravel-ecommerce-store.svg)
+![Build Status](https://img.shields.io/scrutinizer/build/status/hillgp/laravel-ecommerce-store.svg)
 
 ---
 

@@ -20,8 +20,7 @@ Este guia explica como instalar e configurar os sistemas de **Wishlist/Favoritos
 
 ```bash
 # Se estiver usando como package
-= se for desenvolvimento local
-# O package já deve estar instalado no seu projeto
+composer require hillgp/laravel-ecommerce-store
 ```
 
 ### Passo 2: Publicar Assets
@@ -424,7 +423,7 @@ console.log('CSRF Token:', document.querySelector('meta[name="csrf-token"]'));
 php artisan route:list | grep comparison
 
 # Se não aparecer, verificar se o package está instalado
-composer show laravel-ecommerce/store
+composer show hillgp/laravel-ecommerce-store
 ```
 
 ### Problema: Migrations não executam
